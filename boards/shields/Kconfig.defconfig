@@ -1,7 +1,0 @@
-config SHIELD_LILY58_LEFT
-    bool "Enable Lily58 Left Shield"
-    select SHIELD_LILY58_LEFT
-
-config SHIELD_LILY58_RIGHT
-    bool "Enable Lily58 Right Shield"
-    select SHIELD_LILY58_RIGHT
