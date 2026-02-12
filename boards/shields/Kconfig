@@ -1,0 +1,9 @@
+if BOARD_NICE_NANO_V2
+
+config SHIELD_LILY58_LEFT
+    bool "Lily58 Left"
+
+config SHIELD_LILY58_RIGHT
+    bool "Lily58 Right"
+
+endif
