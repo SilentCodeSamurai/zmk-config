@@ -44,31 +44,6 @@
         compatible = "zmk,wired-split";
         device = <&pro_micro_serial>;
     };
-
-    underglow: underglow {
-        compatible = "zmk,underglow";
-        label = "UNDERGLOW";
-        strip = <&ws2812>;
-        color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
-    };
-};
-
-&spi1 {
-    compatible = "nordic,nrf-spi";
-    status = "okay";
-    mosi-pin = <6>;
-    miso-pin = <17>;
-    clk-pin = <5>;
-
-    ws2812: ws2812@0 {
-        compatible = "worldsemi,ws2812b";
-        reg = <0>;
-        spi-max-frequency = <4000000>;
-        chain-length = <35>;
-        spi-one-frame = <0x70>;
-        spi-zero-frame = <0x40>;
-        color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
-    };
 };
 
 &pro_micro_serial {
